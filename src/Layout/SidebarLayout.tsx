@@ -53,7 +53,7 @@ const SidebarLayout = () => {
             <button className="px-4 py-2 rounded-md border dark:border-white">
               Export Report
             </button>
-            <button className="px-4 py-2 rounded-md border dark:bg-[#201417] dark:text-[#cc3b3c]">
+            <button className="px-4 py-2 rounded-md border dark:bg-[#201417] text-[#cc3b3c]">
               Stop Scan
             </button>
           </div>
