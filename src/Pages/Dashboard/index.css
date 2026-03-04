@@ -1,0 +1,24 @@
+.detail-tab {
+  flex: 1;
+  text-align: center;
+  span {
+    font-size: 10px;
+    margin-right: 5px;
+    color: #979797;
+  }
+}
+
+.severity-tab {
+  .severity-label {
+    flex-grow: 1;
+    color: #979797;
+  }
+  .severity-icon {
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

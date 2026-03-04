@@ -1,0 +1,1392 @@
+[
+  {
+    "id": "scan-001",
+    "scan_name": "Security Scan 1",
+    "type": "Blackbox",
+    "environment": "Staging",
+    "target": "target1",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 02, 09:00 AM",
+    "ended_at": "Mar 02, 11:00 AM",
+    "last_scan": "1 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V1A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 10:00 AM"
+      },
+      {
+        "id": "V1B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 11:00 AM"
+      },
+      {
+        "id": "V1C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 12:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 02, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 10:00 AM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 11:00 AM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 12:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 02, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-002",
+    "scan_name": "Security Scan 2",
+    "type": "Whitebox",
+    "environment": "Internal",
+    "target": "target2",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 03, 09:00 AM",
+    "ended_at": "Mar 03, 11:00 AM",
+    "last_scan": "2 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V2A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 11:00 AM"
+      },
+      {
+        "id": "V2B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 12:00 PM"
+      },
+      {
+        "id": "V2C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 01:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 03, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 11:00 AM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 12:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 01:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 03, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-003",
+    "scan_name": "Security Scan 3",
+    "type": "Greybox",
+    "environment": "Development",
+    "target": "target3",
+    "status": "Failed",
+    "progress": 15,
+    "started_at": "Mar 04, 09:00 AM",
+    "ended_at": null,
+    "last_scan": "3 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "pending"
+      },
+      {
+        "name": "Testing",
+        "status": "pending"
+      },
+      {
+        "name": "Validating",
+        "status": "pending"
+      },
+      {
+        "name": "Reporting",
+        "status": "pending"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V3A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 12:00 PM"
+      },
+      {
+        "id": "V3B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 01:00 PM"
+      },
+      {
+        "id": "V3C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 02:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 04, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 12:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 01:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 02:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      }
+    ]
+  },
+  {
+    "id": "scan-004",
+    "scan_name": "Security Scan 4",
+    "type": "Blackbox",
+    "environment": "Production",
+    "target": "target4",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 05, 09:00 AM",
+    "ended_at": "Mar 05, 11:00 AM",
+    "last_scan": "4 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V4A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 01:00 PM"
+      },
+      {
+        "id": "V4B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 02:00 PM"
+      },
+      {
+        "id": "V4C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 03:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 05, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 01:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 02:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 03:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 05, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-005",
+    "scan_name": "Security Scan 5",
+    "type": "Whitebox",
+    "environment": "Staging",
+    "target": "target5",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 06, 09:00 AM",
+    "ended_at": "Mar 06, 11:00 AM",
+    "last_scan": "5 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V5A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 02:00 PM"
+      },
+      {
+        "id": "V5B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 03:00 PM"
+      },
+      {
+        "id": "V5C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 04:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 06, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 02:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 03:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 04:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 06, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-006",
+    "scan_name": "Security Scan 6",
+    "type": "Greybox",
+    "environment": "Internal",
+    "target": "target6",
+    "status": "In Progress",
+    "progress": 65,
+    "started_at": "Mar 07, 09:00 AM",
+    "ended_at": null,
+    "last_scan": "6 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "pending"
+      },
+      {
+        "name": "Testing",
+        "status": "pending"
+      },
+      {
+        "name": "Validating",
+        "status": "pending"
+      },
+      {
+        "name": "Reporting",
+        "status": "pending"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V6A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 03:00 PM"
+      },
+      {
+        "id": "V6B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 04:00 PM"
+      },
+      {
+        "id": "V6C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 05:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 07, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 03:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 04:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 05:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      }
+    ]
+  },
+  {
+    "id": "scan-007",
+    "scan_name": "Security Scan 7",
+    "type": "Blackbox",
+    "environment": "Development",
+    "target": "target7",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 08, 09:00 AM",
+    "ended_at": "Mar 08, 11:00 AM",
+    "last_scan": "7 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V7A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 04:00 PM"
+      },
+      {
+        "id": "V7B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 05:00 PM"
+      },
+      {
+        "id": "V7C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 06:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 08, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 04:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 05:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 06:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 08, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-008",
+    "scan_name": "Security Scan 8",
+    "type": "Whitebox",
+    "environment": "Production",
+    "target": "target8",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 09, 09:00 AM",
+    "ended_at": "Mar 09, 11:00 AM",
+    "last_scan": "8 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V8A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 05:00 PM"
+      },
+      {
+        "id": "V8B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 06:00 PM"
+      },
+      {
+        "id": "V8C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 07:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 09, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 05:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 06:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 07:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 09, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-009",
+    "scan_name": "Security Scan 9",
+    "type": "Greybox",
+    "environment": "Staging",
+    "target": "target9",
+    "status": "In Progress",
+    "progress": 65,
+    "started_at": "Mar 10, 09:00 AM",
+    "ended_at": null,
+    "last_scan": "9 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "pending"
+      },
+      {
+        "name": "Testing",
+        "status": "pending"
+      },
+      {
+        "name": "Validating",
+        "status": "pending"
+      },
+      {
+        "name": "Reporting",
+        "status": "pending"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V9A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 06:00 PM"
+      },
+      {
+        "id": "V9B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 07:00 PM"
+      },
+      {
+        "id": "V9C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 08:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 10, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 06:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 07:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 08:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      }
+    ]
+  },
+  {
+    "id": "scan-010",
+    "scan_name": "Security Scan 10",
+    "type": "Blackbox",
+    "environment": "Internal",
+    "target": "target10",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 11, 09:00 AM",
+    "ended_at": "Mar 11, 11:00 AM",
+    "last_scan": "10 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V10A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 07:00 PM"
+      },
+      {
+        "id": "V10B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 08:00 PM"
+      },
+      {
+        "id": "V10C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 09:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 11, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 07:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 08:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 09:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 11, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-011",
+    "scan_name": "Security Scan 11",
+    "type": "Whitebox",
+    "environment": "Development",
+    "target": "target11",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 12, 09:00 AM",
+    "ended_at": "Mar 12, 11:00 AM",
+    "last_scan": "11 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V11A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 08:00 PM"
+      },
+      {
+        "id": "V11B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 09:00 PM"
+      },
+      {
+        "id": "V11C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 10:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 12, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 08:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 09:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 10:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 12, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-012",
+    "scan_name": "Security Scan 12",
+    "type": "Greybox",
+    "environment": "Production",
+    "target": "target12",
+    "status": "In Progress",
+    "progress": 65,
+    "started_at": "Mar 13, 09:00 AM",
+    "ended_at": null,
+    "last_scan": "12 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "pending"
+      },
+      {
+        "name": "Testing",
+        "status": "pending"
+      },
+      {
+        "name": "Validating",
+        "status": "pending"
+      },
+      {
+        "name": "Reporting",
+        "status": "pending"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V12A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 09:00 PM"
+      },
+      {
+        "id": "V12B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 10:00 PM"
+      },
+      {
+        "id": "V12C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 11:00 PM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 13, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 09:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 10:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 01, 11:00 PM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      }
+    ]
+  },
+  {
+    "id": "scan-013",
+    "scan_name": "Security Scan 13",
+    "type": "Blackbox",
+    "environment": "Staging",
+    "target": "target13",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 14, 09:00 AM",
+    "ended_at": "Mar 14, 11:00 AM",
+    "last_scan": "13 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V13A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 10:00 PM"
+      },
+      {
+        "id": "V13B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 11:00 PM"
+      },
+      {
+        "id": "V13C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 02, 12:00 AM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 14, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 10:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 01, 11:00 PM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 02, 12:00 AM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 14, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-014",
+    "scan_name": "Security Scan 14",
+    "type": "Whitebox",
+    "environment": "Internal",
+    "target": "target14",
+    "status": "Completed",
+    "progress": 100,
+    "started_at": "Mar 15, 09:00 AM",
+    "ended_at": "Mar 15, 11:00 AM",
+    "last_scan": "14 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "completed"
+      },
+      {
+        "name": "Testing",
+        "status": "completed"
+      },
+      {
+        "name": "Validating",
+        "status": "completed"
+      },
+      {
+        "name": "Reporting",
+        "status": "completed"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V14A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 01, 11:00 PM"
+      },
+      {
+        "id": "V14B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 02, 12:00 AM"
+      },
+      {
+        "id": "V14C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 02, 01:00 AM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 15, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 01, 11:00 PM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 02, 12:00 AM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 02, 01:00 AM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      },
+      {
+        "time": "Mar 15, 11:00 AM",
+        "message": "Scan completed successfully"
+      }
+    ]
+  },
+  {
+    "id": "scan-015",
+    "scan_name": "Security Scan 15",
+    "type": "Greybox",
+    "environment": "Development",
+    "target": "target15",
+    "status": "In Progress",
+    "progress": 65,
+    "started_at": "Mar 16, 09:00 AM",
+    "ended_at": null,
+    "last_scan": "15 days ago",
+    "vulnerabilities_summary": {
+      "critical": 1,
+      "high": 1,
+      "medium": 1,
+      "low": 0
+    },
+    "steps": [
+      {
+        "name": "Login",
+        "status": "completed"
+      },
+      {
+        "name": "Mapping",
+        "status": "pending"
+      },
+      {
+        "name": "Testing",
+        "status": "pending"
+      },
+      {
+        "name": "Validating",
+        "status": "pending"
+      },
+      {
+        "name": "Reporting",
+        "status": "pending"
+      }
+    ],
+    "vulnerability_list": [
+      {
+        "id": "V15A",
+        "title": "SQL Injection",
+        "severity": "critical",
+        "cvss": 9.8,
+        "status": "open",
+        "endpoint": "/login",
+        "description": "SQL Injection vulnerability detected affecting endpoint /login. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 02, 12:00 AM"
+      },
+      {
+        "id": "V15B",
+        "title": "Cross-Site Scripting (XSS)",
+        "severity": "high",
+        "cvss": 8.2,
+        "status": "open",
+        "endpoint": "/search",
+        "description": "Cross-Site Scripting (XSS) vulnerability detected affecting endpoint /search. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 02, 01:00 AM"
+      },
+      {
+        "id": "V15C",
+        "title": "Insecure Direct Object Reference",
+        "severity": "medium",
+        "cvss": 6.5,
+        "status": "open",
+        "endpoint": "/profile",
+        "description": "Insecure Direct Object Reference vulnerability detected affecting endpoint /profile. Immediate remediation is recommended to reduce risk exposure.",
+        "detected_at": "Mar 02, 02:00 AM"
+      }
+    ],
+    "activity_logs": [
+      {
+        "time": "Mar 16, 09:00 AM",
+        "message": "Scan started"
+      },
+      {
+        "time": "Mar 02, 12:00 AM",
+        "message": "Critical vulnerability detected: SQL Injection"
+      },
+      {
+        "time": "Mar 02, 01:00 AM",
+        "message": "High vulnerability detected: Cross-Site Scripting (XSS)"
+      },
+      {
+        "time": "Mar 02, 02:00 AM",
+        "message": "Medium vulnerability detected: Insecure Direct Object Reference"
+      }
+    ]
+  }
+]

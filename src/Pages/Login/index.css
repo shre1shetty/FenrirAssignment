@@ -1,0 +1,42 @@
+.main {
+  background-image: url("/LoginBg.png");
+  background-position: "center";
+  height: 100%;
+  color: white;
+  overflow: auto;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.login-tab {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 450px;
+}
+
+.form-control {
+  padding: 12px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.login-heading-text {
+  font-size: 2.5rem;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

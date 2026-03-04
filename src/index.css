@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #0cc8a8;
+  --color-btn-primary: #0e9e9e;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+@layer base {
+  body {
+    @apply text-black bg-white;
+  }
+
+  .dark body {
+    @apply text-white bg-[#0a0f13];
+  }
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.root {
+  /* height: 100vh; */
+  flex: 1;
+  font-family: "Roboto", sans-serif;
+  button {
+    cursor: pointer;
+  }
+}
+
+.ant-steps-item-rail {
+  border-color: gray;
+}
+
+.dark {
+  .ant-steps-item-title {
+    color: #fff;
+  }
+  .ant-steps-item-rail {
+    border-color: #2f363d;
+  }
+  .ant-collapse-body {
+    background-color: #0a0f13;
+  }
+  .ant-collapse-header,
+  .ant-collapse-item {
+    background-color: #161a21 !important;
+  }
+  .ant-collapse-expand-icon,
+  .ant-tabs-tab-btn,
+  .ant-breadcrumb-separator {
+    color: white !important;
+  }
+}
+.ant-steps-item-title {
+  margin-top: 6px;
+}
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #0e9e9e !important;
+}
+.ant-tabs-ink-bar {
+  background: #0e9e9e !important;
+}
+
+.ant-tabs-tab {
+  padding: 12px 34px !important;
+  font-weight: 700;
+}
+
+.ant-collapse-header,
+.ant-collapse-item {
+  background-color: #f8f9fb !important;
+}
